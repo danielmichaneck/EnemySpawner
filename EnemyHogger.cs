@@ -13,6 +13,7 @@ namespace EnemyHandler
         /// </summary>
         internal override void Update()
         {
+            // Writes a special message in the console.
             Console.WriteLine("I am Hogger! RAWR!");
         }
     }

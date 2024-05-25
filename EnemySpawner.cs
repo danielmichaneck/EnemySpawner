@@ -24,6 +24,9 @@ namespace EnemyHandler
 
         private Enemy SpawnRandomEnemy()
         {
+            // Gets a random enemy type from
+            // the static class EnemyHelper
+            // and returns an Enemy of that type.
             EnemyType type = EnemyHelper.GetRandomEnemyType();
             switch (type)
             {
@@ -37,7 +40,9 @@ namespace EnemyHandler
 
         public Enemy? SpawnUpdate()
         {
-            // Checks if timer has reached 2 seconds (2000 milliseconds).
+            // Checks if timer has reached 2 seconds (2000 milliseconds)
+            // If yes, returns a random enemy via SpawnRandomEnemy().
+            // Resets the timer.
             if (timer.ElapsedMilliseconds > 2000.0)
             {
                 timer.Restart();
