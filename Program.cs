@@ -1,4 +1,4 @@
-﻿namespace EnemySpawner
+﻿namespace EnemyHandler
 {
     internal class Program
     {
